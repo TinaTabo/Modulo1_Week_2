@@ -1,3 +1,4 @@
+//-- Clases
 class Person{
     // Constructor
     constructor(name,lastName,age,weight,height,nationality){
@@ -14,3 +15,5 @@ class Person{
         return Math.floor((this.peso / Math.pow(this.altura,2))*10000);
     }
 }
+
+
