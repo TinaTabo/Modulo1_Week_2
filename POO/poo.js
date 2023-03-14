@@ -1,7 +1,7 @@
 //-- Clases
 class Person{
     //-- Constructor
-    constructor(name,lastName,weight,height,nationality,yearOfBirth){
+    constructor(name,lastName,weight,height,nationality,yearOfBirth,hobbies=[]){
         //-- Atributos
         this.name = name;
         this.lastName = lastName;
@@ -9,6 +9,7 @@ class Person{
         this.height = height;
         this.nationality = nationality;
         this.yearOfBirth = yearOfBirth;
+        this.hobbies = hobbies;
     }
 
     //-- Métodos
@@ -27,13 +28,26 @@ class Person{
             console.log(`${attribute}-${this[attribute]}`);
         }
     }
+
+    printHobbies(){
+        console.log(`Estos son los hobbies de ${this.name}:`);
+        for (const hobbie in this.hobbies) {
+            console.log(this.hobbies[hobbie]);
+        }
+    }
 }
 
 
 //-- Pruebas
-let persona = new Person('Olivia','Fernandez',75,165,'Española',1998);
+let hobbies = ["comer","videojuegos","leer","kdramas"];
+let persona = new Person('Olivia','Fernandez',75,165,'Española',1998,hobbies);
+
 let imc = persona.calcIMC();
 console.log(`IMC = ${imc}`);
+
 let edad = persona.calcAge();
 console.log(`${persona.name} tiene ${edad} años.`);
+
 persona.printAll();
+
+persona.printHobbies();
