@@ -1,4 +1,4 @@
-class Book{
+export class Book{
     //-- Atributos privados
     private title: string;
     private nPages: number;
@@ -59,10 +59,6 @@ class Book{
 
     //-- Métodos
     toString():string{
-        return `Title - ${this.title}\n
-                Number of Pages - ${this.nPages}\n
-                ISBN - ${this.isbn}\n
-                Author - ${this.author}\n
-                Editorial - ${this.editorial}`
+        return `Title - ${this.title}\nNumber of Pages - ${this.nPages}\nISBN - ${this.isbn}\nAuthor - ${this.author}\nEditorial - ${this.editorial}`
     }
 }
