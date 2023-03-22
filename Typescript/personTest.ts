@@ -5,8 +5,8 @@ import {Person} from "./person";
 let persona:Person = new Person("Jin",29,"Incheon, Seoul");
 persona.printName();
 
-let date = new Date();
-let currentYear = date.getFullYear();
+let date:Date = new Date();
+let currentYear:number = date.getFullYear();
 console.log(`Edad: ${persona.age}, Año de nacimiento: ${persona.yearOfBirth(currentYear)}`);
 
 console.log(persona.getAddress());
