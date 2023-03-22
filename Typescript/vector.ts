@@ -11,6 +11,12 @@ export class Vector{
     }
 
     //-- Métodos públicos
+    //-- getters y setters
+    getElements():number[]{
+        return this.elements;
+    }
+
+    //-- Métodos
     print():void{
         console.log(this.elements);
     }
