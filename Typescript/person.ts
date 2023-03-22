@@ -1,4 +1,5 @@
-class Person{
+// Exportar clase
+export class Person{
     // Declaración de atributos o propiedades
 
     //-- Atributos públicos
@@ -32,6 +33,3 @@ class Person{
         return this.address;
     }
 }
-
-// Exportar clase
-export {Person};
