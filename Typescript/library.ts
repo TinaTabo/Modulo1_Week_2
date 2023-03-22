@@ -1,7 +1,7 @@
 //-- Importar clase Book
 import { Book } from "./book";
 
-class Library{
+export class Library{
     //-- Atributos privados
     private books: Book[];
     private address: string;
@@ -36,7 +36,7 @@ class Library{
     toString():string{
         let bookList:string = ``;
         for (let i:number = 0; i < this.books.length; i++) {
-            bookList += `\nBook${i}:\n${this.books[i].toString()}`
+            bookList += `\nBook${i+1}:\n${this.books[i].toString()}\n`
         }
         return bookList;
     }
