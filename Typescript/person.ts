@@ -32,3 +32,6 @@ class Person{
         return this.address;
     }
 }
+
+// Exportar clase
+export {Person};
