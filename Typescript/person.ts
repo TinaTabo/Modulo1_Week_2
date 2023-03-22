@@ -16,7 +16,7 @@ class Person{
     }
 
     // Implementación de los metodos getters y setters y del resto de metodos públicos.
-    public printName(){
+    public printName():void{
         console.log(this.name);
     }
 
