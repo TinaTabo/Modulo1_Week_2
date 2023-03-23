@@ -1,7 +1,7 @@
 {
-  "name": "easycalc",
+  "name": "easycalc-cristaboada",
   "version": "1.0.0",
-  "description": "Reto Opcional 5 - Tema 8 - Modulo 1",
+  "description": "Clase EasyCalc, que contiene las funciones más básicas de una calculadora.",
   "main": "easyCalc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
